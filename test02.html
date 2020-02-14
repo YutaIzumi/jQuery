@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="utf-8">
+    <title>jQueryのテスト</title>
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script>
+        jQuery(function($) {
+            $("a[target='_blank']").css("color", "pink");
+            $("a[target='_self']").css("color", "blue");
+        });
+    </script>
+    </head>
+    <body>
+        <a href="" target="_blank">ピンクです</a>
+        <a href="" target="_self">青です</a>
+        <a href="" target="_parent">赤です</a>
+        <a href="" target="_top" class="fruit">緑です</a>
+    </body>
+</html>

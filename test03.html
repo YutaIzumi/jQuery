@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="utf-8">
+    <title>jQueryのテスト</title>
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script>
+        jQuery(function($) {
+            $("span", "#taro").css("color", "red");
+        });
+    </script>
+    </head>
+    <body>
+        <ul>
+            <li id="taro"><span>taro</span></li>
+            <li><span>jiro</span></li>
+            <li><span>hanako</span></li>
+        </ul>
+    </body>
+</html>
