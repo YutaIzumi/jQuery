@@ -9,8 +9,15 @@
     crossorigin="anonymous"></script>
     <script>
         jQuery(function($) {
-            $("li:first").css("color", "red");
-            $("li:first-child").css("font-size", "2em");
+            $.ajax({
+            url: "https://ipinfo.io",
+            dataType: "jsonp",
+            success: function(res){
+                $(".ip-address").text(res.ip);
+                console.log(res.ip);
+                console.log(res.country);
+                }
+            });
         });
     </script>
     </head>
